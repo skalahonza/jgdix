@@ -1,10 +1,30 @@
-# JG DIX
-Wordpress configuration and customizations.
+Agency Jekyll theme
+====================
 
-## Setup
-1. Run `docker-compose up`
-2. Navigate to http://localhost:8000/
-3. Install Wordpress using wizard
-4. Install [All-in-One WP Migration](https://wordpress.org/plugins/all-in-one-wp-migration/)
-5. Import your site backup
-6. Ready for development
+Agency theme based on [Agency bootstrap theme ](https://startbootstrap.com/template-overviews/agency/)
+
+# How to use
+
+###Portfolio 
+
+Portfolio projects are in '/_posts'
+
+Images are in '/img/portfolio'
+
+###About
+
+Images are in '/img/about/'
+
+###Team
+
+Team members and info are in '_config.yml'
+
+Images are in '/img/team/'
+
+
+# Demo
+
+View this jekyll theme in action [here](https://y7kim.github.io/agency-jekyll-theme)
+
+=========
+For more details, read [documentation](http://jekyllrb.com/)
