@@ -15,3 +15,7 @@ Images are in '/img/about/'
 ### Team
 Team members and info are in '_config.yml'
 Images are in '/img/team/'
+
+### Run locally
+1. Run `docker-compose up -d`
+2. Go to http://localhost:4000/jgdix/#
