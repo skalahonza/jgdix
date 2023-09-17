@@ -8,4 +8,5 @@ services:
       - ./vendor/bundle/:/usr/local/bundle
     ports:
       - "4000:4000"
-    command: jekyll serve --force_polling --drafts --watch --livereload
+      - "4001:4001"
+    command: jekyll serve --force_polling --drafts --watch --livereload --livereload_port 4001
