@@ -20,10 +20,10 @@
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>{{ post.date | date: "%d.%m.%Y" }}</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
+                                <h4 class="subheading">{{ post.title }}</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">{{ post.description }}</p>
+                                <p class="text-muted">{{ post.subtitle }}</p>
                             </div>
                         </div>
                     </li>
