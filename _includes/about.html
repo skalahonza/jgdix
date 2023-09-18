@@ -9,8 +9,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <ul class="timeline">
-                    {% assign sorted_posts = site.posts | sort: 'date' %}
-                    {% for post in sorted_posts %}
+                    {% assign sorted_concerts = site.concerts | sort: 'date' %}
+                    {% for concert in sorted_concerts %}
                     {% assign mod_result = forloop.index | modulo: 2 %}
                     {% if mod_result == 0 %}
                     <li class="timeline-inverted">
@@ -19,11 +19,11 @@
                         {% endif %}
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>{{ post.date | date: "%d.%m.%Y" }}</h4>
-                                <h4 class="subheading">{{ post.title }}</h4>
+                                <h4>{{ concert.date | date: "%d.%m.%Y" }}</h4>
+                                <h4 class="subheading">{{ concert.title }}</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">{{ post.subtitle }}</p>
+                                <p class="text-muted">{{ concert.venue }}</p>
                             </div>
                         </div>
                     </li>
