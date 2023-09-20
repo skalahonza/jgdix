@@ -261,7 +261,8 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default.navbar-shrink {
-        padding: 10px 0;
+        padding: 0px 0;
+        padding-top: 10px;
         background-color: #222;
     }
 
@@ -335,8 +336,12 @@ section {
 
 section h2.section-heading {
     margin-top: 0;
-    margin-bottom: 50px;
     font-size: 40px;
+}
+
+.row {
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 section h3.section-subheading {
