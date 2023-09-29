@@ -10,7 +10,9 @@ description: "Write an awesome description for your new site here. You can edit 
 
 collections:
   concerts:
-    output: true
+    output: false
+  tracks:
+    output: false
 
 # exclude dev files
 exclude:
