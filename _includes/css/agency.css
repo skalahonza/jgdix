@@ -873,3 +873,10 @@ body {
 .song-title {
     text-transform: none;
 }
+
+.rounded-rectangle {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
