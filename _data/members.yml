@@ -9,3 +9,35 @@
 - name: Veronika Kasalová
   instrument: Zpěv
   image: /img/band/3.jpg
+
+- name: Jan Zahrádko
+  instrument: Dechová sekce
+  image: /img/band/4.jpg
+
+- name: Lukáš Kyncl
+  instrument: Trumpeta
+  image: /img/band/5.jpg
+
+- name: Pavel Bondor
+  instrument: Klarinet, Saxofon
+  image: /img/band/6.jpg
+
+- name: Roman Pulkrábek
+  instrument: Pozoun
+  image: /img/band/7.jpg
+
+- name: Jakub Janíček
+  instrument: Basa
+  image: /img/band/8.jpg
+
+- name: Jan Skála
+  instrument: Klavír
+  image: /img/band/9.jpg
+
+- name: Jan Horák
+  instrument: Bicí
+  image: /img/band/10.jpg
+
+- name: Jan Macháček
+  instrument: Kytara, Zpěv
+  image: /img/band/11.jpg
