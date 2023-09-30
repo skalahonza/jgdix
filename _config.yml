@@ -2,10 +2,14 @@ url: https://skalahonza.github.io
 baseurl: /jgdix/
 
 # Site settings
-title: JG Dix
+title: JG Dix2
 subtitle: Hudba nejen let třicátých
 email: info@jgdix.cz
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: >
+  JG Dix je seskupením z Holic a Pardubicka, které stojí na pomezí mezi klasickým dixielandem a malým orchestrem. 
+  Repertoár je složen ze známých spirituálů a dixielandových skladeb domácích i zahraničních autorů. 
+  Často hrajeme na akcích typu: firemní večírky, soukromé akce, městské oslavy, plesy, svatby, apod.
+
 
 collections:
   concerts:
