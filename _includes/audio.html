@@ -7,7 +7,7 @@
         </div>
         <div class="row">
             {% for track in site.tracks %}
-            <div class="col-md-4">
+            <div class="col-md-4 text-center">
                 <h4 class="song-title">{{ track.title }}</h4>
                 <audio controls preload="metadata">
                     <source src="{{ track.file | prepend: site.baseurl }}" type="audio/mp3">
