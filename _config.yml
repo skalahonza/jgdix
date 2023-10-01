@@ -15,8 +15,6 @@ description: >
 collections:
   concerts:
     output: false
-  tracks:
-    output: false
 
 # exclude dev files
 exclude:
