@@ -38,6 +38,7 @@ jobs:
           source: ./
           destination: ./_site
           verbose: true
+          future: true
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
