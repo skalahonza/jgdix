@@ -37,3 +37,4 @@ Icon
 .Trashes
 .Gemfile.swp
 .jekyll-cache
+Gemfile.lock
