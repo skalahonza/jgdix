@@ -1,31 +1,12 @@
-version: '3.3'
+version: '3'
 
 services:
-   db:
-     image: mysql:5.7
-     volumes:
-       - db_data:/var/lib/mysql
-     restart: always
-     environment:
-       MYSQL_ROOT_PASSWORD: somewordpress
-       MYSQL_DATABASE: wordpress
-       MYSQL_USER: wordpress
-       MYSQL_PASSWORD: wordpress
-
-   wordpress:
-     depends_on:
-       - db
-     image: wordpress:latest
-     ports:
-       - "8000:80"
-     restart: always
-     volumes:
-#       - ./:/var/www/html/wp-content
-       - ./upload.ini:/usr/local/etc/php/conf.d/uploads.ini
-     environment:
-       WORDPRESS_DB_HOST: db:3306
-       WORDPRESS_DB_USER: wordpress
-       WORDPRESS_DB_PASSWORD: wordpress
-       WORDPRESS_DB_NAME: wordpress
-volumes:
-    db_data: {}
+  jekyll:
+    build: .
+    volumes:
+      - .:/srv/jekyll
+      - ./vendor/bundle/:/usr/local/bundle
+    ports:
+      - "4000:4000"
+      - "4001:4001"
+    command: jekyll serve --force_polling --drafts --watch --livereload --livereload_port 4001

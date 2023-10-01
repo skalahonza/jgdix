@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+gem 'jekyll', '~> 4.0'
+gem 'bundler'
+gem 'public_suffix', '5.0.3'
+gem 'webrick'

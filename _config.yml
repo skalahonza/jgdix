@@ -1,0 +1,36 @@
+url: https://skalahonza.github.io
+baseurl: /jgdix/
+timezone: Europe/Prague
+
+# Site settings
+title: JG Dix
+subtitle: Hudba nejen let třicátých
+email: info@jgdix.cz
+description: >
+  JG Dix je seskupením z Holic a Pardubicka, které stojí na pomezí mezi klasickým dixielandem a malým orchestrem. 
+  Repertoár je složen ze známých spirituálů a dixielandových skladeb domácích i zahraničních autorů. 
+  Často hrajeme na akcích typu: firemní večírky, soukromé akce, městské oslavy, plesy, svatby, apod.
+
+
+collections:
+  concerts:
+    output: false
+
+# exclude dev files
+exclude:
+  - docker-compose.yml
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock
+  - Gemfile.swp
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: facebook
+    url: https://www.facebook.com/JG-DIX-2017767915169692/
+  - title: youtube
+    url: https://www.youtube.com/channel/UCebpB0WxbndCUwSNzIYgv5Q
+
+# Build settings
+markdown: kramdown
+permalink: pretty

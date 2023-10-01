@@ -1,0 +1,61 @@
+<section id="services" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Co hrajeme</h2>
+            </div>
+        </div>
+        <div class="row">
+            <p class="col-md-10 offset-md-1 col-lg-12 text-center lead mt-5 mb-4">
+                JG Dix je seskupením z Holic a Pardubicka, které stojí na pomezí mezi klasickým dixielandem a malým
+                orchestrem. Repertoár je složen ze známých spirituálů a dixielandových skladeb domácích i
+                zahraničních autorů. Jsou zde však obsaženy i písně jdoucí za hranice tohoto stylu.
+            </p>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-microphone fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading">Firemní večírky nebo soukromé akce</h4>
+                <p>Chcete udělat nezapomenutelný firemní večírek nebo oslavu? Naše kapela zahraje všechny vaše oblíbené
+                    hity a zaručíme, že taneční parket bude plný od začátku do konce.</p>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-music fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading">Městské oslavy</h4>
+                <p>Plánujete městskou oslavu nebo festival? Naše kapela je připravena přivést energii a dobrý vibe na
+                    jakoukoli akci. Garantujeme vám skvělou atmosféru!</p>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading">Plesy</h4>
+                <p>Ať už plánujete školní ples nebo společenský ples, naše kapela vám nabídne stylovou hudbu, která
+                    zpříjemní večer všem přítomným.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Poslechěnte si nás</h2>
+            </div>
+        </div>
+        <div class="row">
+            {% for track in site.data.tracks %}
+            <div class="col-md-4 text-center">
+                <h4 class="song-title">{{ track.title }}</h4>
+                <audio controls preload="metadata">
+                    <source src="{{ track.file | prepend: site.baseurl }}" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

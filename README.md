@@ -1,10 +1,21 @@
-# JG DIX
-Wordpress configuration and customizations.
+JG Dix website
+====================
 
-## Setup
-1. Run `docker-compose up`
-2. Navigate to http://localhost:8000/
-3. Install Wordpress using wizard
-4. Install [All-in-One WP Migration](https://wordpress.org/plugins/all-in-one-wp-migration/)
-5. Import your site backup
-6. Ready for development
+Based on [Agency Jekyll theme](https://github.com/y7kim/agency-jekyll-theme)
+
+# How to use
+
+### Portfolio 
+Portfolio projects are in '/_posts'
+Images are in '/img/portfolio'
+
+### About
+Images are in '/img/about/'
+
+### Team
+Team members and info are in '_config.yml'
+Images are in '/img/team/'
+
+### Run locally
+1. Run `docker-compose up -d`
+2. Go to http://localhost:4000/jgdix/#

@@ -1,0 +1,57 @@
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">
+                <img src="{{ site.baseurl }}/img/JGDIX_logo_color_RGB2.png" alt="JG Dix logo">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#concerts">Koncerty</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#services">Co hrajeme</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#members">Členové kapely</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Kontakt</a>
+                </li>
+                <li>
+                    <a href="{{ 'jg-dix-stageplan.pdf' | prepend: site.baseurl }}" target="_blank">Stage plan</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- Header -->
+<header>
+    <div style="background-color: rgba(0,0,0,0.5);">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading">{{ site.title }}</div>
+                <div class="intro-lead-in">{{ site.subtitle }}</div>
+                <!-- <a href="#services" class="page-scroll btn btn-xl">O Kapele</a> -->
+            </div>
+        </div>
+    </div>
+</header>

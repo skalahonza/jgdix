@@ -1,0 +1,20 @@
+<section id="members">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Členové kapely</h2>
+            </div>
+        </div>
+        <div class="row">
+            {% for member in site.data.members %}
+            <div class="col-md-4 text-center">
+                <img src="{{ member.image | prepend: site.baseurl }}" 
+                alt="{{ member.name }}" 
+                class="img-responsive rounded-rectangle center-block" 
+                style="width: 150px; height: 200px; object-fit: cover;">
+                <h4>{{ member.name }}</h4>
+                <p>{{ member.instrument }}</p>
+            </div>
+            {% endfor %}
+        </div>
+</section>
