@@ -1,3 +1,4 @@
 FROM jekyll/jekyll
 
-RUN gem install webrick
+COPY Gemfile /srv/jekyll/
+RUN bundle install
