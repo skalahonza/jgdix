@@ -1,17 +1,17 @@
 - title: Coney Island Washboard
-  file: audio/coney.mp3
+  file: /audio/coney.mp3
 
 - title: Winchester Cathedral
-  file: audio/winchester.mp3
+  file: /audio/winchester.mp3
 
 - title: Summertime
-  file: audio/summertime.mp3
+  file: /audio/summertime.mp3
 
 - title: Manhattan Dixieland
-  file: audio/manh.mp3
+  file: /audio/manh.mp3
 
 - title: Starej pán
-  file: audio/starej_pan.mp3
+  file: /audio/starej_pan.mp3
 
 - title: Slunečnice
-  file: audio/slunecnice.mp3
+  file: /audio/slunecnice.mp3
