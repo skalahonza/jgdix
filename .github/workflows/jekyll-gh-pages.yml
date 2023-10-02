@@ -2,9 +2,13 @@
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
 on:
+  # This cron expression runs the job every hour at the start of the hour.
+  schedule:
+    - cron: '0 * * * *'
+
   # Runs on pushes targeting the default branch
   push:
-    branches: ["master","v2"]
+    branches: ["master"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
