@@ -9,6 +9,7 @@
             {% for member in site.data.members %}
             <div class="col-md-4 text-center">
                 <img src="{{ member.image | prepend: site.baseurl }}" 
+                loading="lazy"
                 alt="{{ member.name }}" 
                 class="img-responsive rounded-rectangle center-block" 
                 style="width: 150px; height: 200px; object-fit: cover;">
