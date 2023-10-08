@@ -19,8 +19,16 @@
                         {% endif %}
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>{{ concert.date | date: "%d.%m.%Y" }}{% if concert.time and concert.time != "" %} | {{ concert.time }}{% endif %}</h4>
-                                    <h4 class="subheading">{{ concert.title }}</h4>
+                                    <div class="concert-details">
+                                        <p class="concert-date">
+                                            {{ concert.date | date: "%d.%m.%Y" }}
+                                            {% if concert.time and concert.time != "" %}
+                                            | {{ concert.time }}
+                                            {% endif %}
+                                        </p>
+                                        <p class="concert-title">{{ concert.title }}</p>
+                                    </div>
+                                    
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">{{ concert.venue }}</p>
