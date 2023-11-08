@@ -10,9 +10,21 @@
                 <ul class="timeline">
                     {% assign sorted_concerts = site.concerts | sort: 'date' %}
                     {% assign filtered_concerts = sorted_concerts | upcoming_concerts %}
-                    {% for concert in filtered_concerts %}
-                    {% assign mod_result = forloop.index | modulo: 2 %}
-                    {% if mod_result == 0 %}
+
+                    {% if filtered_concerts.size == 0 %}
+                    <li>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <div class="concert-details">
+                                    <p class="concert-title">Koncerty pro Vás teprve připravujeme.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {% else %}
+                        {% for concert in filtered_concerts %}
+                        {% assign mod_result = forloop.index | modulo: 2 %}
+                        {% if mod_result == 0 %}
                     <li class="timeline-inverted">
                         {% else %}
                     <li>
@@ -33,11 +45,13 @@
                                 <p class="text-muted">{{ concert.venue }}</p>
                             </div>
                             {% if concert.link and concert.link != "" %}
-                            <a href="{{ concert.link }}" target="_blank" class="btn btn-primary btn-xs">Více informací</a>
+                            <a href="{{ concert.link }}" target="_blank" class="btn btn-primary btn-xs">Více
+                                informací</a>
                             {% endif %}
                         </div>
                     </li>
                     {% endfor %}
+                    {% endif %}
                 </ul>
             </div>
         </div>
