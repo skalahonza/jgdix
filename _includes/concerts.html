@@ -53,6 +53,50 @@
                     {% endfor %}
                     {% endif %}
                 </ul>
+
+                <div class="text-center">
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#concertsCollapse"
+                        aria-expanded="false" aria-controls="concertsCollapse">
+                        Minulé koncerty
+                    </button>
+                </div>
+
+                <div class="collapse" id="concertsCollapse">
+                    <ul class="timeline">
+                        {% assign sorted_concerts = site.concerts | sort: 'date' | reverse %}
+                        {% assign filtered_concerts = sorted_concerts | past_concerts %}
+
+                        {% for concert in filtered_concerts %}
+                        {% assign mod_result = forloop.index | modulo: 2 %}
+                        {% if mod_result == 0 %}
+                        <li class="timeline-inverted">
+                            {% else %}
+                        <li>
+                            {% endif %}
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <div class="concert-details">
+                                        <p class="concert-date">
+                                            {{ concert.date | date: "%d.%m.%Y" }}
+                                            {% if concert.time and concert.time != "" %}
+                                            | {{ concert.time }}
+                                            {% endif %}
+                                        </p>
+                                        <p class="concert-title">{{ concert.title }}</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">{{ concert.venue }}</p>
+                                </div>
+                                {% if concert.link and concert.link != "" %}
+                                <a href="{{ concert.link }}" target="_blank" class="btn btn-primary btn-xs">Více
+                                    informací</a>
+                                {% endif %}
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

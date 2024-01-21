@@ -440,6 +440,7 @@ section h3.section-subheading {
     position: relative;
     padding: 0;
     list-style: none;
+    margin-top: 10px;
 }
 
 .timeline:before {
