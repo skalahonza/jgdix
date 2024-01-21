@@ -64,7 +64,7 @@
                 <div class="collapse" id="concertsCollapse">
                     <ul class="timeline">
                         {% assign sorted_concerts = site.concerts | sort: 'date' | reverse %}
-                        {% assign filtered_concerts = sorted_concerts | upcoming_concerts %}
+                        {% assign filtered_concerts = sorted_concerts | past_concerts %}
 
                         {% for concert in filtered_concerts %}
                         {% assign mod_result = forloop.index | modulo: 2 %}
