@@ -38,3 +38,7 @@ Icon
 .Gemfile.swp
 .jekyll-cache
 Gemfile.lock
+/.idea/.gitignore
+/.idea/jgdix.iml
+/.idea/modules.xml
+/.idea/vcs.xml
