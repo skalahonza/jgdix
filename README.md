@@ -1,43 +1,42 @@
-JG Dix website
-====================
+# JG Dix webová stránka
 
-This is the official website of the JG Dix band, built with Jekyll.
+Toto jsou oficiální webové stránky kapely JG Dix, postavené pomocí Jekyllu.
 
-## How to manage the website content
+## Jak spravovat obsah webu
 
-### Adding a Concert
+### Přidání koncertu
 
-To add a new concert, create a new markdown file in the `_concerts` directory. The filename should be an incrementing number (e.g., `14.md`). The file should contain the following front matter:
+Pro přidání nového koncertu vytvořte nový soubor ve formátu markdown ve složce `_concerts`. Název souboru by měl být postupně číslovaný (např. `14.md`). Soubor musí obsahovat následující front matter:
 
 ```yaml
 ---
-title: Name of the event
-date: YYYY-MM-DD
-venue: Location of the event
+title: Název akce
+date: RRRR-MM-DD
+venue: Místo konání
 ---
 ```
 
-### Modifying Band Members
+### Úprava členů kapely
 
-To modify the list of band members, edit the `_data/members.yml` file. This is a YAML file containing a list of members. Each member has the following properties:
+Pro úpravu seznamu členů kapely otevřete soubor `_data/members.yml`. Jedná se o YAML soubor se seznamem členů. Každý člen má následující vlastnosti:
 
-- `name`: The name of the band member.
-- `instrument`: The instrument(s) the member plays.
-- `image`: The path to the member's image in the `/img/band/` directory.
+* `name`: Jméno člena kapely
+* `instrument`: Nástroj(e), které hraje
+* `image`: Cesta k obrázku člena ve složce `/img/band/`
 
-To add a new member, add a new entry to the list. To remove a member, delete their entry.
+Pro přidání nového člena přidejte nový záznam do seznamu. Pro odstranění člena smažte jeho záznam.
 
-### Modifying the Track List
+### Úprava seznamu skladeb
 
-To modify the track list on the website, edit the `_data/tracks.yml` file. This is a YAML file containing a list of tracks. Each track has the following properties:
+Pro úpravu seznamu skladeb na webu otevřete soubor `_data/tracks.yml`. Tento YAML soubor obsahuje seznam skladeb. Každá skladba má následující vlastnosti:
 
-- `title`: The title of the track.
-- `file`: The path to the audio file in the `/audio/` directory.
+* `title`: Název skladby
+* `file`: Cesta k audio souboru ve složce `/audio/`
 
-To add a new track, add a new entry to the list. To remove a track, delete its entry.
+Pro přidání nové skladby přidejte nový záznam do seznamu. Pro odstranění skladby smažte její záznam.
 
-## How to run locally
+## Jak spustit lokálně
 
-1.  Run `docker-compose up -d`
-2.  Go to http://localhost:4000
-3.  Done
+1. Spusťte `docker-compose up -d`
+2. Otevřete [http://localhost:4000](http://localhost:4000)
+3. Hotovo
