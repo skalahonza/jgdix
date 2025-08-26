@@ -19,3 +19,4 @@ Images are in '/img/team/'
 ### Run locally
 1. Run `docker-compose up -d`
 2. Go to http://localhost:4000
+3. Done
