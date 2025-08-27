@@ -4,6 +4,8 @@ Toto jsou oficiální webové stránky kapely JG Dix, postavené pomocí Jekyllu
 
 ## Jak spravovat obsah webu
 
+Odkaz na editaci: https://github.dev/skalahonza/jgdix
+
 ### Přidání koncertu
 
 Pro přidání nového koncertu vytvořte nový soubor ve formátu markdown ve složce `_concerts`. Název souboru by měl být postupně číslovaný (např. `14.md`). Soubor musí obsahovat následující front matter:
