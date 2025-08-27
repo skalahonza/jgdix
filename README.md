@@ -15,6 +15,7 @@ Pro přidání nového koncertu vytvořte nový soubor ve formátu markdown ve s
 title: Název akce
 date: RRRR-MM-DD
 venue: Místo konání
+link: https://example.com
 ---
 ```
 
