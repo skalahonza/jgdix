@@ -1,0 +1,70 @@
+backend:
+  name: github
+  repo: skalahonza/jgdix
+  branch: master
+  # URL instance sveltia-cms-auth (OAuth přihlášení přes GitHub).
+  # Dokud není nasazená, lze se přihlásit osobním přístupovým tokenem (PAT).
+  # base_url: https://auth.example.com
+
+media_folder: img
+public_folder: /img
+
+collections:
+  - name: concerts
+    label: Koncerty
+    label_singular: Koncert
+    folder: _concerts
+    create: true
+    delete: true
+    extension: md
+    format: yaml-frontmatter
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} ({{fields.date}}) — {{venue}}"
+    sortable_fields: [date, title]
+    fields:
+      - { label: Název akce, name: title, widget: string }
+      - { label: Místo konání, name: venue, widget: string }
+      - label: Datum
+        name: date
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: YYYY-MM-DD
+        time_format: false
+      - { label: Odkaz (nepovinný), name: link, widget: string, required: false }
+
+  - name: band
+    label: Kapela
+    editor:
+      preview: false
+    files:
+      - name: members
+        label: Členové kapely
+        file: _data/members.yml
+        fields:
+          - label: Členové
+            name: members
+            label_singular: Člen
+            widget: list
+            fields:
+              - { label: Jméno, name: name, widget: string }
+              - { label: Nástroj, name: instrument, widget: string }
+              - label: Fotka
+                name: image
+                widget: image
+                media_folder: /img/band
+                public_folder: /img/band
+      - name: tracks
+        label: Skladby
+        file: _data/tracks.yml
+        fields:
+          - label: Skladby
+            name: tracks
+            label_singular: Skladba
+            widget: list
+            fields:
+              - { label: Název, name: title, widget: string }
+              - label: Audio soubor
+                name: file
+                widget: file
+                media_folder: /audio
+                public_folder: /audio
