@@ -7,4 +7,4 @@ services:
     ports:
       - "4000:4000"
       - "4001:4001"
-    command: jekyll serve --force_polling --drafts --watch --livereload --livereload_port 4001
+    command: jekyll serve --host 0.0.0.0 --force_polling --drafts --watch --livereload --livereload_port 4001
